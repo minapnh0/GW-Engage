@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.navdrawer.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_forms"
+        android:name="com.example.navdrawer.forms"
+        android:label="Forms"
+        tools:layout="@layout/fragment_forms" />
+
+    <fragment
+        android:id="@+id/nav_news"
+        android:name="com.example.navdrawer.news"
+        android:label="News"
+        tools:layout="@layout/fragment_news" />
+
+    <fragment
+        android:id="@+id/nav_events"
+        android:name="com.example.navdrawer.Events"
+        android:label="Events"
+        tools:layout="@layout/fragment_events" />
+
+    <fragment
+        android:id="@+id/nav_services"
+        android:name="com.example.navdrawer.services"
+        android:label="Services"
+        tools:layout="@layout/fragment_services"/>
+
+    <fragment
+        android:id="@+id/nav_organizations"
+        android:name="com.example.navdrawer.organizations"
+        android:label="Organizations"
+        tools:layout="@layout/fragment_organizations" />
+
+</navigation>
