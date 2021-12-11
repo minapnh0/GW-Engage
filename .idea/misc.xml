@@ -10,6 +10,7 @@
         <entry key="app/src/main/res/drawable/ic_menu_forms.xml" value="0.321025641025641" />
         <entry key="app/src/main/res/drawable/ic_menu_home.xml" value="0.321025641025641" />
         <entry key="app/src/main/res/drawable/ic_menu_news.xml" value="0.321025641025641" />
+        <entry key="app/src/main/res/drawable/ic_menu_organization.xml" value="0.153125" />
         <entry key="app/src/main/res/drawable/ic_menu_organization_background.xml" value="0.20092592592592592" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.15070921985815602" />
         <entry key="app/src/main/res/layout/app_bar_main.xml" value="0.12984822934232715" />
@@ -22,6 +23,7 @@
         <entry key="app/src/main/res/layout/fragment_organizations.xml" value="0.1716485507246377" />
         <entry key="app/src/main/res/layout/fragment_services.xml" value="0.1716485507246377" />
         <entry key="app/src/main/res/layout/fragment_slideshow.xml" value="0.1716485507246377" />
+        <entry key="app/src/main/res/layout/fragment_tutor.xml" value="0.26458333333333334" />
         <entry key="app/src/main/res/layout/nav_header_main.xml" value="0.1716485507246377" />
         <entry key="app/src/main/res/menu/activity_main_drawer.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/menu/main.xml" value="0.25" />
