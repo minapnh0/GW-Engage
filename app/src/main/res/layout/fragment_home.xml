@@ -7,15 +7,15 @@
     tools:context=".ui.home.HomeFragment">
 
     <RelativeLayout
+        android:id="@+id/hom"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scrollbars = "vertical">
 
-        <ImageView
-            android:id="@+id/image1"
+        <TextView
+            android:id="@+id/explore"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/image1"/>
+            android:layout_height="wrap_content" />
 
     <TextView
         android:id="@+id/text_home"
