@@ -33,6 +33,7 @@
             android:padding="10dp"
             android:layout_margin="15dp"
             android:orientation="horizontal"
+            android:gravity="center_horizontal|center_vertical"
             android:background="@color/pantone1205C">
 
             <LinearLayout
@@ -86,6 +87,7 @@
             android:padding="10dp"
             android:layout_margin="15dp"
             android:orientation="horizontal"
+            android:gravity="center_horizontal|center_vertical"
             android:background="@color/pantone_7503C">
 
             <LinearLayout
@@ -128,7 +130,6 @@
                     android:padding="2dp"
                     android:gravity="center"
                     android:text="Hosted by: International House" />
-
             </LinearLayout>
         </LinearLayout>
 
@@ -139,6 +140,7 @@
             android:padding="10dp"
             android:layout_margin="15dp"
             android:orientation="horizontal"
+            android:gravity="center_horizontal|center_vertical"
             android:background="@color/pantone1205C">
 
             <LinearLayout
@@ -185,6 +187,7 @@
             android:padding="10dp"
             android:layout_margin="15dp"
             android:orientation="horizontal"
+            android:gravity="center_horizontal|center_vertical"
             android:background="@color/pantone_7503C">
 
             <LinearLayout
@@ -239,6 +242,7 @@
             android:padding="10dp"
             android:layout_margin="15dp"
             android:orientation="horizontal"
+            android:gravity="center_horizontal|center_vertical"
             android:background="@color/pantone1205C">
 
             <LinearLayout
