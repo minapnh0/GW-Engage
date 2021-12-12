@@ -23,8 +23,8 @@
             android:textSize="20sp"
             android:text="The following events will be coming up "
             android:layout_centerVertical="true"
-            android:textColor="@color/black"
-            android:background="@color/pantone1205C"/>
+            android:textColor="@color/black"/>
+
 
         <!-- asl event  -->
         <LinearLayout
@@ -169,6 +169,13 @@
                     android:text="Monday, December 13, 2021"
                     android:gravity="center"
                     android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/donut_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="10:00 AM EST " />
                 <TextView
                     android:id="@+id/donut_host"
                     android:layout_width="match_parent"
