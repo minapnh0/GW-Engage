@@ -19,7 +19,7 @@
             android:padding="10dp"
             android:layout_margin="15dp"
             android:orientation="horizontal"
-            android:background="@color/teal_700">
+            android:background="@color/pantone1205C">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -68,7 +68,7 @@
             android:padding="10dp"
             android:layout_margin="15dp"
             android:orientation="horizontal"
-            android:background="@color/teal_700">
+            android:background="@color/pantone_7503C">
 
             <LinearLayout
                 android:layout_width="wrap_content"
