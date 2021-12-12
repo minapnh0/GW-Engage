@@ -1,4 +1,4 @@
-package com.example.navdrawer;
+package com.example.navdrawer.ui.News_Database;
 
 public class UserModal {
     // variables for our first name,
