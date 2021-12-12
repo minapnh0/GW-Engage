@@ -12,7 +12,7 @@
         android:orientation="vertical"
         android:scrollbars = "vertical">
 
-        <!-- Event #1 -->
+        <!-- asl event  -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -22,46 +22,48 @@
             android:background="@color/pantone1205C">
 
             <LinearLayout
+                android:id="@+id/asl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
                 <ImageView
-                    android:id="@+id/imageView"
+                    android:id="@+id/asl_image"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/image1"/>
+                    android:src="@drawable/asl"/>
                 <TextView
-                    android:id="@+id/news_Title"
+                    android:id="@+id/asl_Title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    android:text="GWISA Application Clinic"
+                    android:text="ASL Club Movie Mondays"
                     android:gravity="center"
                     android:textStyle="bold"/>
                 <TextView
-                    android:id="@+id/news_date"
+                    android:id="@+id/asl_date"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    android:text="Sunday, November 28, 2021"
+                    android:text="Monday, December 13, 2021"
                     android:gravity="center"
                     android:textStyle="bold"/>
                 <TextView
-                    android:id="@+id/author"
+                    android:id="@+id/asl_host"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    android:text="Posted by Jiacheng Ji for GW International Students Association" />
+                    android:gravity="center"
+                    android:text=" Host by: The American Sign Language Club" />
                 <TextView
-                    android:id="@+id/news_description"
+                    android:id="@+id/asl_description"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    android:text="Is the internship hunt getting too brutal for you? Say no more, ISA's got you!😎😎 Come to our Application Clinic on December 1 to take a deeper dive into cover letters and resumes." />
+                    android:text="Come hang out with the American Sign Language Club for our monthly movie nights! Each film will highlight different aspects of the deaf experience or prominently feature sign language as part of the film. Whether trying to learn a new language or find a community, this event is perfect for beginners and experts alike." />
             </LinearLayout>
         </LinearLayout>
 
-        <!-- News event #2 -->
+        <!-- basement cafe event #2 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -71,46 +73,48 @@
             android:background="@color/pantone_7503C">
 
             <LinearLayout
+                android:id="@+id/basement"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
                 <ImageView
-                    android:id="@+id/imageView2"
+                    android:id="@+id/basement_image"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/image1" />
+                    android:src="@drawable/basement" />
                 <TextView
-                    android:id="@+id/news_Title2"
+                    android:id="@+id/basement_Title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    android:text="GWISA Application Clinic"
+                    android:text="Basement Cafe"
                     android:gravity="center"
                     android:textStyle="bold"/>
                 <TextView
-                    android:id="@+id/news_date2"
+                    android:id="@+id/basement_date"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    android:text="Sunday, November 28, 2021"
+                    android:text="Monday, December 13, 2021"
                     android:gravity="center"
                     android:textStyle="bold"/>
                 <TextView
-                    android:id="@+id/author2"
+                    android:id="@+id/basement_host"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    android:text="Posted by Jiacheng Ji for GW International Students Association" />
+                    android:gravity="center"
+                    android:text="Hosted by: International House" />
                 <TextView
-                    android:id="@+id/news_description2"
+                    android:id="@+id/basement_description"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    android:text="Is the internship hunt getting too brutal for you? Say no more, ISA's got you!😎😎 Come to our Application Clinic on December 1 to take a deeper dive into cover letters and resumes." />
+                    android:text="Come to I-House Basement Cafe for some hot chocolate, Holiday rice crispy, and candy canes with unique encouragements for everyone! It'll be a chill and quiet place for residents to enjoy some food while getting started on their finals studying! " />
             </LinearLayout>
         </LinearLayout>
 
-        <!-- Hard code event #3 -->
+        <!-- donuts events #3 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -120,46 +124,48 @@
             android:background="@color/pantone1205C">
 
             <LinearLayout
+                android:id="@+id/donut"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
                 <ImageView
-                    android:id="@+id/imageView3"
+                    android:id="@+id/donut_image"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/image1" />
+                    android:src="@drawable/donuts" />
                 <TextView
-                    android:id="@+id/news_Title3"
+                    android:id="@+id/donut_Title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    android:text="GWISA Application Clinic"
+                    android:text="West Hall December Donuts"
                     android:gravity="center"
                     android:textStyle="bold"/>
                 <TextView
-                    android:id="@+id/news_date3"
+                    android:id="@+id/donut_date"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    android:text="Sunday, November 28, 2021"
+                    android:text="Monday, December 13, 2021"
                     android:gravity="center"
                     android:textStyle="bold"/>
                 <TextView
-                    android:id="@+id/author3"
+                    android:id="@+id/donut_host"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    android:text="Posted by Jiacheng Ji for GW International Students Association" />
+                    android:gravity="center"
+                    android:text="Hosted by: Residence Hall Associate" />
                 <TextView
-                    android:id="@+id/news_description3"
+                    android:id="@+id/donut_description"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    android:text="Is the internship hunt getting too brutal for you? Say no more, ISA's got you!😎😎 Come to our Application Clinic on December 1 to take a deeper dive into cover letters and resumes." />
+                    android:text="It's December and you know what that means (or you don't) - DONUTS!! Come by the West Hall entry desk for a coffee and pastry pick-me-up to bring a little joy to your finals studying." />
             </LinearLayout>
         </LinearLayout>
 
-        <!-- News event #4 -->
+        <!-- passport #4 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -169,45 +175,99 @@
             android:background="@color/pantone_7503C">
 
             <LinearLayout
+                android:id="@+id/passport"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
                 <ImageView
-                    android:id="@+id/imageView4"
+                    android:id="@+id/passport_image"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/image1" />
+                    android:src="@drawable/passport" />
                 <TextView
-                    android:id="@+id/news_Title4"
+                    android:id="@+id/passport_Title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    android:text="GWISA Application Clinic"
+                    android:text="GW Passport Event: GW's MBB VS RADFORD"
                     android:gravity="center"
                     android:textStyle="bold"/>
                 <TextView
-                    android:id="@+id/news_date4"
+                    android:id="@+id/passport_date"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    android:text="Sunday, November 28, 2021"
+                    android:text="Monday, December  13, 2021"
                     android:gravity="center"
                     android:textStyle="bold"/>
                 <TextView
-                    android:id="@+id/author4"
+                    android:id="@+id/passport_host"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    android:text="Posted by Jiacheng Ji for GW International Students Association" />
+                    android:text="Hosted by: George's Army"
+                    android:gravity="center"/>
                 <TextView
-                    android:id="@+id/news_description4"
+                    android:id="@+id/passport_description4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    android:text="Is the internship hunt getting too brutal for you? Say no more, ISA's got you!😎😎 Come to our Application Clinic on December 1 to take a deeper dive into cover letters and resumes." />
+                    android:text="GW Passport is a GW Athletics sponsored program where students have the chance to receive $25 gift cards to Amazon after attending 5 athletics events! Pick up your physical passport at the event, get it stamped, and check in on Engage to be entered to win!
+                    This passport event will be on Monday 12/13 at 7:00pm in the Charles E. Smith Center as GWMBB takes on RADFORD! " />
             </LinearLayout>
         </LinearLayout>
 
+        <!-- stress event #5 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:background="@color/pantone_7503C">
+
+            <LinearLayout
+                android:id="@+id/stress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/stress_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/stress" />
+                <TextView
+                    android:id="@+id/stress_Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="Potomac De-Stress Dinner"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/stress_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="Monday, December  13, 2021"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/stress_host"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="Hosted by: Potomac House"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/stress_description4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:gravity="center"
+                    android:text="Join CC Chelsey for Potomac's De-Stress Dinner! Grab a plate, enjoy some food and fun with your fellow neighbors. Dinner will be provided by District Rico (Peruvian chicken with gluten-free, vegetarian, and vegan options). Food is first come, first serve! Hope to see you there" />
+            </LinearLayout>
+        </LinearLayout>
 
     </LinearLayout>
 
