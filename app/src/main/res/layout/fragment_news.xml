@@ -1,216 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<!--in this we are displaying a nested scroll view-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/idNestedSV"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".news">
+    tools:context=".ui.News.news">
 
-    <!-- Hard coding in news articles -->
-    <LinearLayout
+    <!--recycler view for displaying our list of data
+        and we are making nested scroll for our
+        recycler view as false-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idRVUsers"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:scrollbars = "vertical">
+        android:layout_height="match_parent"
+        tools:listitem="@layout/user_rv_item" />
 
-        <!-- Event #1 -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:layout_margin="15dp"
-            android:orientation="horizontal"
-            android:background="@color/pantone1205C">
+    <!--we are adding progress bar for the purpose of loading-->
+    <ProgressBar
+        android:id="@+id/idPBLoading"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/image1" />
-                <TextView
-                    android:id="@+id/news_Title"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="2dp"
-                    android:text="GWISA Application Clinic"
-                    android:gravity="center"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:id="@+id/news_date"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="2dp"
-                    android:text="Sunday, November 28, 2021"
-                    android:gravity="center"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:id="@+id/author"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="2dp"
-                    android:text="Posted by Jiacheng Ji for GW International Students Association" />
-                <TextView
-                    android:id="@+id/news_description"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="2dp"
-                    android:text="Is the internship hunt getting too brutal for you? Say no more, ISA's got you!😎😎 Come to our Application Clinic on December 1 to take a deeper dive into cover letters and resumes." />
-            </LinearLayout>
-        </LinearLayout>
-
-        <!-- News event #2 -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:layout_margin="15dp"
-            android:orientation="horizontal"
-            android:background="@color/pantone_7503C">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <ImageView
-                    android:id="@+id/imageView2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/image1" />
-                <TextView
-                    android:id="@+id/news_Title2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="2dp"
-                    android:text="GWISA Application Clinic"
-                    android:gravity="center"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:id="@+id/news_date2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="2dp"
-                    android:text="Sunday, November 28, 2021"
-                    android:gravity="center"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:id="@+id/author2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="2dp"
-                    android:text="Posted by Jiacheng Ji for GW International Students Association" />
-                <TextView
-                    android:id="@+id/news_description2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="2dp"
-                    android:text="Is the internship hunt getting too brutal for you? Say no more, ISA's got you!😎😎 Come to our Application Clinic on December 1 to take a deeper dive into cover letters and resumes." />
-            </LinearLayout>
-        </LinearLayout>
-
-        <!-- Hard code event #3 -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:layout_margin="15dp"
-            android:orientation="horizontal"
-            android:background="@color/pantone1205C">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <ImageView
-                    android:id="@+id/imageView3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/image1" />
-                <TextView
-                    android:id="@+id/news_Title3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="2dp"
-                    android:text="GWISA Application Clinic"
-                    android:gravity="center"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:id="@+id/news_date3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="2dp"
-                    android:text="Sunday, November 28, 2021"
-                    android:gravity="center"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:id="@+id/author3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="2dp"
-                    android:text="Posted by Jiacheng Ji for GW International Students Association" />
-                <TextView
-                    android:id="@+id/news_description3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="2dp"
-                    android:text="Is the internship hunt getting too brutal for you? Say no more, ISA's got you!😎😎 Come to our Application Clinic on December 1 to take a deeper dive into cover letters and resumes." />
-            </LinearLayout>
-        </LinearLayout>
-
-        <!-- News event #4 -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:layout_margin="15dp"
-            android:orientation="horizontal"
-            android:background="@color/pantone_7503C">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <ImageView
-                    android:id="@+id/imageView4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/image1" />
-                <TextView
-                    android:id="@+id/news_Title4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="2dp"
-                    android:text="GWISA Application Clinic"
-                    android:gravity="center"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:id="@+id/news_date4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="2dp"
-                    android:text="Sunday, November 28, 2021"
-                    android:gravity="center"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:id="@+id/author4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="2dp"
-                    android:text="Posted by Jiacheng Ji for GW International Students Association" />
-                <TextView
-                    android:id="@+id/news_description4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="2dp"
-                    android:text="Is the internship hunt getting too brutal for you? Say no more, ISA's got you!😎😎 Come to our Application Clinic on December 1 to take a deeper dive into cover letters and resumes." />
-            </LinearLayout>
-        </LinearLayout>
-
-
-    </LinearLayout>
-
-
-</FrameLayout>
+</RelativeLayout>
