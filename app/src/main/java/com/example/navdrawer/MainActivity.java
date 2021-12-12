@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                         new String[]{"minapnh@gwu.edu"});  //developer 's email
                 Email.putExtra(Intent.EXTRA_SUBJECT,
                         "Add your Subject"); // Email 's Subject
-                Email.putExtra(Intent.EXTRA_TEXT, "Dear Developer Name," + "");  //Email 's Greeting text
+                Email.putExtra(Intent.EXTRA_TEXT, "Dear GWU," + "");  //Email 's Greeting text
                 startActivity(Intent.createChooser(Email, "Send Feedback:"));
             }
         });
