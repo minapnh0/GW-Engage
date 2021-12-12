@@ -12,7 +12,6 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.navdrawer.R;
 import com.example.navdrawer.databinding.FragmentHomeBinding;
 
 public class HomeFragment extends Fragment {
