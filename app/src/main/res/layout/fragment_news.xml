@@ -6,7 +6,7 @@
     android:id="@+id/idNestedSV"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.News.news">
+    tools:context=".ui.News_Database.news">
 
     <!--recycler view for displaying our list of data
         and we are making nested scroll for our

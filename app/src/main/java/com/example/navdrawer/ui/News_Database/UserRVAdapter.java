@@ -1,4 +1,4 @@
-package com.example.navdrawer.ui.News;
+package com.example.navdrawer.ui.News_Database;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -11,7 +11,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.navdrawer.R;
-import com.example.navdrawer.UserModal;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;

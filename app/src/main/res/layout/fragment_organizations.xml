@@ -19,212 +19,197 @@
             android:layout_margin="15dp"
             android:background="@color/pantone1205C"
             android:orientation="horizontal"
+            android:gravity="center_horizontal|center_vertical"
             android:padding="10dp">
 
             <LinearLayout
+                android:id="@+id/active"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/imageView"
+                    android:id="@+id/active_image"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/image1" />
+                    android:src="@drawable/active" />
 
                 <TextView
-                    android:id="@+id/news_Title"
+                    android:id="@+id/active_Title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="2dp"
-                    android:text="GWISA Application Clinic"
+                    android:text="Active Minds at The George Washington University"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/news_date"
+                    android:id="@+id/active_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="2dp"
-                    android:text="Sunday, November 28, 2021"
+                    android:text="kfernberg@gwu.edu"
                     android:textStyle="bold" />
-
                 <TextView
-                    android:id="@+id/author"
+                    android:id="@+id/active_addy"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:padding="2dp"
-                    android:text="Posted by Jiacheng Ji for GW International Students Association" />
-
-                <TextView
-                    android:id="@+id/news_description"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="2dp"
-                    android:text="Is the internship hunt getting too brutal for you? Say no more, ISA's got you!😎😎 Come to our Application Clinic on December 1 to take a deeper dive into cover letters and resumes." />
+                    android:text="Washington, DC 20052 United States"
+                    android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
 
         <!-- News event #2 -->
+        <!-- Event #1 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:background="@color/pantone_7503C"
             android:orientation="horizontal"
+            android:gravity="center_horizontal|center_vertical"
             android:padding="10dp">
 
             <LinearLayout
+                android:id="@+id/adopted"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/imageView2"
+                    android:id="@+id/adopted_image"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/image1" />
+                    android:src="@drawable/adopted" />
 
                 <TextView
-                    android:id="@+id/news_Title2"
+                    android:id="@+id/adopted_Title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="2dp"
-                    android:text="GWISA Application Clinic"
+                    android:text="Adopted and Fostered Students Association"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/news_date2"
+                    android:id="@+id/adopted_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="2dp"
-                    android:text="Sunday, November 28, 2021"
+                    android:text="afsagwu@gmail.com"
                     android:textStyle="bold" />
-
                 <TextView
-                    android:id="@+id/author2"
+                    android:id="@+id/adopted_addy"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:padding="2dp"
-                    android:text="Posted by Jiacheng Ji for GW International Students Association" />
-
-                <TextView
-                    android:id="@+id/news_description2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="2dp"
-                    android:text="Is the internship hunt getting too brutal for you? Say no more, ISA's got you!😎😎 Come to our Application Clinic on December 1 to take a deeper dive into cover letters and resumes." />
+                    android:text="Washington, DC 20052 United States"
+                    android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
 
-        <!-- Hard code event #3 -->
+        <!-- Event #3 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:background="@color/pantone1205C"
             android:orientation="horizontal"
+            android:gravity="center_horizontal|center_vertical"
             android:padding="10dp">
 
             <LinearLayout
+                android:id="@+id/african"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/imageView3"
+                    android:id="@+id/african_image"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/image1" />
+                    android:src="@drawable/african" />
 
                 <TextView
-                    android:id="@+id/news_Title3"
+                    android:id="@+id/african_Title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="2dp"
-                    android:text="GWISA Application Clinic"
+                    android:text="African Students Association"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/news_date3"
+                    android:id="@+id/african_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="2dp"
-                    android:text="Sunday, November 28, 2021"
+                    android:text="gwuasa7@gmail.com"
                     android:textStyle="bold" />
-
                 <TextView
-                    android:id="@+id/author3"
+                    android:id="@+id/african_addy"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:padding="2dp"
-                    android:text="Posted by Jiacheng Ji for GW International Students Association" />
-
-                <TextView
-                    android:id="@+id/news_description3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="2dp"
-                    android:text="Is the internship hunt getting too brutal for you? Say no more, ISA's got you!😎😎 Come to our Application Clinic on December 1 to take a deeper dive into cover letters and resumes." />
+                    android:text="800 21st Street NW, Washington, DC 20052 Washington, DC 20052 United States of America"
+                    android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
 
-        <!-- News event #4 -->
+        <!-- Event #4 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:background="@color/pantone_7503C"
             android:orientation="horizontal"
+            android:gravity="center_horizontal|center_vertical"
             android:padding="10dp">
 
             <LinearLayout
+                android:id="@+id/agape"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/imageView4"
+                    android:id="@+id/agape_image"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/image1" />
+                    android:src="@drawable/agape" />
 
                 <TextView
-                    android:id="@+id/news_Title4"
+                    android:id="@+id/agape_Title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="2dp"
-                    android:text="GWISA Application Clinic"
+                    android:text="Agape Campus Christian Fellowship"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/news_date4"
+                    android:id="@+id/agape_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="2dp"
-                    android:text="Sunday, November 28, 2021"
+                    android:text="agape@gwu.edu"
                     android:textStyle="bold" />
-
                 <TextView
-                    android:id="@+id/author4"
+                    android:id="@+id/agape_phone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:padding="2dp"
-                    android:text="Posted by Jiacheng Ji for GW International Students Association" />
-
-                <TextView
-                    android:id="@+id/news_description4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="2dp"
-                    android:text="Is the internship hunt getting too brutal for you? Say no more, ISA's got you!😎😎 Come to our Application Clinic on December 1 to take a deeper dive into cover letters and resumes." />
+                    android:text="202-549-2011"
+                    android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
 

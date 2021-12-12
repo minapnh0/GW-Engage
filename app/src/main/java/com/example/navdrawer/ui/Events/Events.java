@@ -15,6 +15,20 @@ import android.view.ViewGroup;
  */
 public class Events extends Fragment {
 
+    /*
+    Comment: Per imageView create another ImageView object
+
+    ImageView imageView(*Rename*) = findViewById(R.id.myImage(*Rename*));
+
+    imageView.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent(*Rename*) = new Intent(getApplicationContext(), (*Rename*)SecondActivity.class);
+            startActivity(intent(*Rename*));
+        }
+    });
+     */
+
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
