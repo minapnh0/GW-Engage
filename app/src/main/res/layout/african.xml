@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="794dp"
+        android:orientation="vertical"
+        android:scrollbars="vertical">
+
+        <!-- Event #1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:background="@color/pewter_gray"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/african_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/african_image_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/african" />
+
+                <TextView
+                    android:id="@+id/african_Title_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="African Students Association"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/african_email_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text=" gwuasa7@gmail.com"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/african_addy_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="800 21st Street NW, Washington, DC 20052 Washington, DC 20052
+United States of America"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/african_description_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:gravity="center"
+                    android:text="The African Students Association is dedicated to increasing awareness, communication, and collaboration on issues related to Africa at The George Washington University and DMV area. "/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="794dp"
+        android:orientation="vertical"
+        android:scrollbars="vertical">
+
+    <!-- Event #1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:background="@color/pewter_gray"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/active_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/active_image_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/active" />
+
+            <TextView
+                android:id="@+id/active_Title_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="Active Minds at The George Washington University"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/active_email_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="kfernberg@gwu.edu"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/active_addy_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="Washington, DC 20052 United States"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/active_description_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:gravity="center"
+                android:text="Active Minds GW is a student organization dedicated to fighting mental health stigma through awareness and increasing accessibility for self-care and mental health services for students! Our activities and initiatives look to spread happiness throughout campus. We serve as an advocate for mental illness and additional non-health related issues that may affect the lives of college students. We empower and support students in times of need and create an anchor for those who feel as if they have nowhere else to turn to. We are an all-inclusive organization open to any student who wants to make a difference in the overall atmosphere of GW. "/>
+        </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>
