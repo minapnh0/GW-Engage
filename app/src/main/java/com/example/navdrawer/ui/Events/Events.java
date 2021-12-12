@@ -31,7 +31,7 @@ public class Events extends Fragment {
      */
 
 
-
+ /*
     ImageView stress_image = findViewById(R.id.stress_image);
 
     imageView.setOnClickListener(new View.OnClickListener() {
@@ -41,7 +41,7 @@ public class Events extends Fragment {
             startActivity(intent(stress_imageView));
         }
     });
-
+*/
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
