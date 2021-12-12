@@ -6,7 +6,7 @@
         android:id="@+id/action_settings"
         android:orderInCategory="100"
         android:title="SIGN IN"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="never" />
 
     <item
         android:id="@+id/search"

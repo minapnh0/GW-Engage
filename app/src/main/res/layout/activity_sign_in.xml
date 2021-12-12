@@ -8,12 +8,18 @@
     android:orientation="vertical"
     android:background="#fff"
     android:padding="20dp">
-    
+
+
     <ImageView
         android:id="@+id/log_logo"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        app:srcCompat="@mipmap/ic_login"/>
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:src="@drawable/logologin" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tab_layout"/>
 
     <TextView
         android:id="@+id/log_text1"
@@ -55,6 +61,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/password"
             android:hint="Password"
+            app:endIconMode="password_toggle"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -75,7 +82,7 @@
             android:layout_margin="5dp"/>
 
         <Button
-            android:id="@+id/go"
+            android:id="@+id/Enter"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/black"

@@ -1,8 +1,10 @@
 package com.example.navdrawer;
 
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
+import android.view.MenuItem;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
@@ -13,13 +15,16 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
+import android.widget.Toast;
 
 import android.content.Intent;
 
 
 import com.example.navdrawer.databinding.ActivityMainBinding;
 
-public class MainActivity extends AppCompatActivity {
+import java.util.zip.CheckedOutputStream;
+
+public class MainActivity<id> extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
@@ -64,6 +69,19 @@ public class MainActivity extends AppCompatActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
+    }
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle item selection
+        switch (item.getItemId()) {
+            case R.id.search:
+                return true;
+            case R.id.action_settings:
+                Intent intent = new Intent(this, sign_in.class);
+                startActivity(intent);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     @Override

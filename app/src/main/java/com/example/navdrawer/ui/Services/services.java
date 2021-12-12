@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -27,10 +28,16 @@ public class services extends Fragment implements View.OnClickListener {
     Button Dislike;
     private View mView;
     private ImageView simpleImageView;
+    private String Likecount1 = null;
+    private String Likecount2 = null;
+    private String Likecount3 = null;
+    private String Likecount4 = null;
+    private String Likecount5 = null;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
+
         simpleImageView = (ImageView) getView().findViewById(R.id.impleImageView);
         binding =  FragmentServicesBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
@@ -42,16 +49,50 @@ public class services extends Fragment implements View.OnClickListener {
     }
 
     @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.Dislike:
-                if (imageLabel == "tutor1") {
-                    simpleImageView.setImageResource(R.drawable.tutor2);
-                    imageLabel = "tutor2";
-                    break;
-                }
+    public void onClick(View view) {
+        if (imageLabel == "image1") {
+            if (view.getId() == R.id.Like) {
+                Likecount1 = "Like";
+            } else {
+                Likecount1 = "Dislike";
+            }
+            simpleImageView.setImageResource(R.drawable.tutor2);
+            imageLabel = "tutor2";
+        } else if (imageLabel == "tutor2") {
+            if (view.getId() == R.id.Like) {
+                Likecount2 = "Like";
+            } else {
+                Likecount2 = "Dislike";
+            }
+            simpleImageView.setImageResource(R.drawable.tutor3);
+            imageLabel = "tutor3";
+        } else if (imageLabel == "image3") {
+            if (view.getId() == R.id.Like) {
+                Likecount3 = "Like";
+            } else {
+                Likecount3 = "Dislike";
+            }
+            simpleImageView.setImageResource(R.drawable.tutor4);
+            imageLabel = "tutor4";
+        } else if (imageLabel == "image4") {
+            if (view.getId() == R.id.Like) {
+                Likecount4 = "Like";
+            } else {
+                Likecount4 = "Dislike";
+            }
+            simpleImageView.setImageResource(R.drawable.tutor5);
+            imageLabel = "tutor5";
+        } else if (imageLabel == "image5") {
+            if (view.getId() == R.id.Like) {
+                Likecount5 = "Like";
+            } else  {
+                Likecount5 = "Dislike";
+            }
+
         }
-    }
+
+    };
+
     @Override
     public void onDestroyView() {
         super.onDestroyView();
