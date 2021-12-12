@@ -3,7 +3,7 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
     <ImageView
-        android:id="@+id/ImageView1"
+        android:id="@+id/impleImageView"
         android:layout_width="350dp"
         android:layout_height="300dp"
         android:layout_marginTop="30dp"
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button_yes"
+            android:id="@+id/Like"
             android:layout_width="116dp"
             android:layout_height="80dp"
             android:layout_marginLeft="75dp"
@@ -32,12 +32,12 @@
             android:text="yes" />
 
         <Button
-            android:id="@+id/button_no"
+            android:id="@+id/Dislike"
             android:layout_width="116dp"
             android:layout_height="80dp"
             android:layout_marginLeft="25dp"
             android:layout_marginTop="60dp"
-            android:layout_toRightOf="@id/button_yes"
+            android:layout_toRightOf="@id/Like"
             android:text="no" />
     </RelativeLayout>
 

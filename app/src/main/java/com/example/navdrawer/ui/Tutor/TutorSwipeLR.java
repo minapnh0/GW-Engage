@@ -1,67 +1,56 @@
 package com.example.navdrawer.ui.Tutor;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.Observer;
 
 import com.example.navdrawer.R;
+import com.example.navdrawer.databinding.FragmentTutorBinding;
 
-public class TutorSwipeLR extends Fragment {
+public class TutorSwipeLR extends Fragment implements View.OnClickListener {
 
+    private FragmentTutorBinding binding;
     private TutorSwipeLR TutorSwipeLR;
-
-    String imageLabel = "image1";
+    String imageLabel = "tutor1";
+    Button Like;
+    Button Dislike;
+    private View mView;
+    private ImageView simpleImageView;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    public View onCreateView(@NonNull LayoutInflater inflater,
+                             ViewGroup container, Bundle savedInstanceState) {
+        simpleImageView = (ImageView) getView().findViewById(R.id.impleImageView);
+        Button Dislike = (Button) getView().findViewById(R.id.Dislike);
+        Button Like = (Button) getView().findViewById(R.id.Like);
+        Dislike.setOnClickListener(this);
+        Like.setOnClickListener(this);
+        return simpleImageView;
+    }
 
-        final ImageView simpleImageView = (ImageView) findViewById(R.id.ImageView1);
-        simpleImageView.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){}
-        });
-        Button button_no = (Button) findViewById(R.id.button_no);
-        button_no.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.Dislike:
                 if (imageLabel == "tutor1") {
                     simpleImageView.setImageResource(R.drawable.tutor2);
                     imageLabel = "tutor2";
-                } else {
-                    if(imageLabel=="tutor2"){
-                        simpleImageView.setImageResource(R.drawable.tutor3);
-                        imageLabel = "tutor3";
-                    } else{
-                        if(imageLabel=="tutor3"){
-                        simpleImageView.setImageResource(R.drawable.tutor4);
-                        imageLabel = "tutor4";
-                    } else {
-                            if(imageLabel=="tutor4"){
-                                simpleImageView.setImageResource(R.drawable.tutor5);
-                                imageLabel = "tutor5";
-                            }
-                            else {
-                                simpleImageView.setImageResource(R.drawable.tutor1);
-                                imageLabel = "tutor1";
-                            }
-                        }
+                    break;
                 }
-
-            }
-        });
-        Button button_yes = (Button) findViewById(R.id.button_yes);
-        button_yes.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
+        }
     }
 }
+
+
+
 
 
