@@ -14,12 +14,11 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 
 import com.example.navdrawer.R;
-import com.example.navdrawer.databinding.FragmentTutorBinding;
+import com.example.navdrawer.databinding.FragmentServicesBinding;
 
 public class services extends Fragment implements View.OnClickListener {
 
-    private FragmentTutorBinding binding;
-    private com.example.navdrawer.ui.Tutor.TutorSwipeLR TutorSwipeLR;
+    private FragmentServicesBinding binding;
     String imageLabel = "tutor1";
     Button Like;
     Button Dislike;
