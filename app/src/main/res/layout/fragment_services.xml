@@ -1,14 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".services">
+    tools:context=".ui.home.HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="services" />
+<LinearLayout
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent">
+<ImageView
+    android:id="@+id/impleImageView"
+    android:layout_width="350dp"
+    android:layout_height="300dp"
+    android:layout_marginTop="30dp"
+    android:layout_gravity="center_horizontal"
+    android:scaleType="fitXY"
+    android:src="@drawable/tutor1" />
+<TextView
+    android:id="@+id/About"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="40dp"
+    android:text="Work with me!"
+    android:textAlignment="center"
+    android:textSize="20dp"/>
 
-</FrameLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/Like"
+        android:layout_width="116dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="60dp"
+        android:text="yes" />
+
+    <Button
+        android:id="@+id/Dislike"
+        android:layout_width="116dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="60dp"
+        android:layout_toRightOf="@id/Like"
+        android:text="no" />
+</RelativeLayout>
+
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
