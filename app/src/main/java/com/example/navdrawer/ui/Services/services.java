@@ -12,9 +12,12 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProvider;
 
 import com.example.navdrawer.R;
+import com.example.navdrawer.databinding.FragmentHomeBinding;
 import com.example.navdrawer.databinding.FragmentServicesBinding;
+import com.example.navdrawer.ui.home.HomeViewModel;
 
 public class services extends Fragment implements View.OnClickListener {
 
@@ -29,6 +32,8 @@ public class services extends Fragment implements View.OnClickListener {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         simpleImageView = (ImageView) getView().findViewById(R.id.impleImageView);
+        binding =  FragmentServicesBinding.inflate(inflater, container, false);
+        View root = binding.getRoot();
         Button Dislike = (Button) getView().findViewById(R.id.Dislike);
         Button Like = (Button) getView().findViewById(R.id.Like);
         Dislike.setOnClickListener(this);
