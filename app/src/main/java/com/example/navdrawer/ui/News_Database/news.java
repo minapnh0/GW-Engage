@@ -1,4 +1,4 @@
-package com.example.navdrawer.ui.News;
+package com.example.navdrawer.ui.News_Database;
 
 import android.os.Bundle;
 import android.view.View;
@@ -6,7 +6,6 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.widget.NestedScrollView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -17,8 +16,6 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.navdrawer.R;
-import com.example.navdrawer.UserModal;
-import com.example.navdrawer.ui.News.UserRVAdapter;
 
 import org.json.JSONArray;
 import org.json.JSONException;
