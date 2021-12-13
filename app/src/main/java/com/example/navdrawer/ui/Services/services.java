@@ -38,7 +38,7 @@ public class services extends Fragment implements View.OnClickListener {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-        simpleImageView = (ImageView) getView().findViewById(R.id.impleImageView);
+        simpleImageView = (ImageView) getView().findViewById(R.id.simpleImageView);
         binding =  FragmentServicesBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
         Button Dislike = (Button) getView().findViewById(R.id.Dislike);

@@ -1,101 +1,66 @@
 package com.example.navdrawer.ui.News_Database;
 
 import android.os.Bundle;
+
+import androidx.fragment.app.Fragment;
+
+import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.ProgressBar;
-import android.widget.Toast;
+import android.view.ViewGroup;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.Volley;
 import com.example.navdrawer.R;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
+/**
+ * A simple {@link Fragment} subclass.
+ * Use the {@link news#newInstance} factory method to
+ * create an instance of this fragment.
+ */
+public class news extends Fragment {
 
-import java.util.ArrayList;
+    // TODO: Rename parameter arguments, choose names that match
+    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+    private static final String ARG_PARAM1 = "param1";
+    private static final String ARG_PARAM2 = "param2";
 
-public class news extends AppCompatActivity {
+    // TODO: Rename and change types of parameters
+    private String mParam1;
+    private String mParam2;
 
-    // creating a variable for our array list, adapter class,
-    // recycler view, progressbar, nested scroll view
-    private ArrayList<UserModal> userModalArrayList;
-    private UserRVAdapter userRVAdapter;
-    private RecyclerView userRV;
-    private ProgressBar loadingPB;
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        // creating a new array list.
-        userModalArrayList = new ArrayList<>();
-
-        // initializing our views.
-        userRV = findViewById(R.id.idRVUsers);
-        loadingPB = findViewById(R.id.idPBLoading);
-
-        // calling a method to load our API.
-        getDataFromAPI();
+    public news() {
+        // Required empty public constructor
     }
 
-    private void getDataFromAPI() {
+    /**
+     * Use this factory method to create a new instance of
+     * this fragment using the provided parameters.
+     *
+     * @param param1 Parameter 1.
+     * @param param2 Parameter 2.
+     * @return A new instance of fragment news.
+     */
+    // TODO: Rename and change types and number of parameters
+    public static news newInstance(String param1, String param2) {
+        news fragment = new news();
+        Bundle args = new Bundle();
+        args.putString(ARG_PARAM1, param1);
+        args.putString(ARG_PARAM2, param2);
+        fragment.setArguments(args);
+        return fragment;
+    }
 
-        // creating a string variable for URL.
-        String url = "https://sheets.googleapis.com/v4/spreadsheets/1804WWNkEasal9ce4GawX8tV9k7HjhB2-RRx0pkQkYF8/values/Sheet1!A2:E11?key=AIzaSyADiMVpV1YGNikX_QkxC2EmuP4CojXtZd8";
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        if (getArguments() != null) {
+            mParam1 = getArguments().getString(ARG_PARAM1);
+            mParam2 = getArguments().getString(ARG_PARAM2);
+        }
+    }
 
-        // creating a new variable for our request queue
-        RequestQueue queue = Volley.newRequestQueue(news.this);
-
-        // creating a variable for our JSON object request and passing our URL to it.
-        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
-            @Override
-            public void onResponse(JSONObject response) {
-                loadingPB.setVisibility(View.GONE);
-                try {
-                    JSONObject feedObj = response.getJSONObject("feed");
-                    JSONArray entryArray = feedObj.getJSONArray("entry");
-                    for(int i=0; i<entryArray.length(); i++){
-                        JSONObject entryObj = entryArray.getJSONObject(i);
-                        String firstName = entryObj.getJSONObject("gsx$firstname").getString("$t");
-                        String lastName = entryObj.getJSONObject("gsx$lastname").getString("$t");
-                        String email = entryObj.getJSONObject("gsx$email").getString("$t");
-                        String avatar = entryObj.getJSONObject("gsx$avatar").getString("$t");
-                        userModalArrayList.add(new UserModal(firstName, lastName, email, avatar));
-
-                        // passing array list to our adapter class.
-                        userRVAdapter = new UserRVAdapter(userModalArrayList, news.this);
-
-                        // setting layout manager to our recycler view.
-                        userRV.setLayoutManager(new LinearLayoutManager(news.this));
-
-                        // setting adapter to our recycler view.
-                        userRV.setAdapter(userRVAdapter);
-                    }
-
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                // handline on error listener method.
-                Toast.makeText(news.this, "Fail to get data..", Toast.LENGTH_SHORT).show();
-            }
-        });
-        // calling a request queue method
-        // and passing our json object
-        queue.add(jsonObjectRequest);
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_news, container, false);
     }
 }

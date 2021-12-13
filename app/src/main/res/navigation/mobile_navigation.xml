@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/nav_news"
-        android:name="com.example.navdrawer.news"
+        android:name="com.example.navdrawer.ui.News_Database.news"
         android:label="News"
         tools:layout="@layout/fragment_news" />
 
@@ -31,7 +31,7 @@
 
     <fragment
         android:id="@+id/nav_services"
-        android:name="com.example.navdrawer.services"
+        android:name="com.example.navdrawer.ui.Services.services"
         android:label="Services"
         tools:layout="@layout/fragment_services"/>
 
