@@ -7,7 +7,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
+import android.content.Intent;
+import android.widget.ImageView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -31,13 +32,13 @@ public class Events extends Fragment {
      */
 
 
- /*
-    ImageView stress_image = findViewById(R.id.stress_image);
+/*
+    ImageView imageView = findViewById(R.id.stress_image);
 
     imageView.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Intent intent(*Rename*) = new Intent(getApplicationContext(), (R.layout.stress);
+            Intent stress_i = new Intent(getApplicationContext(), (R.layout.stress);
             startActivity(intent(stress_imageView));
         }
     });

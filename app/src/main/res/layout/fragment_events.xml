@@ -27,41 +27,47 @@
 
 
         <!-- asl event  -->
+
+        <!-- basement cafe event #2 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp"
             android:layout_margin="15dp"
-            android:orientation="horizontal"
+            android:background="@color/pantone1205C"
             android:gravity="center_horizontal|center_vertical"
-            android:background="@color/pantone1205C">
+            android:orientation="horizontal"
+            android:padding="10dp">
 
             <LinearLayout
                 android:id="@+id/asl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
                 <ImageView
                     android:id="@+id/asl_image"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/asl"/>
+                    android:src="@drawable/asl" />
+
                 <TextView
                     android:id="@+id/asl_Title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:padding="2dp"
                     android:text="ASL Club Movie Mondays"
-                    android:gravity="center"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/asl_date"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:padding="2dp"
                     android:text="Monday, December 13, 2021"
-                    android:gravity="center"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/asl_time"
                     android:layout_width="match_parent"
@@ -69,18 +75,18 @@
                     android:gravity="center"
                     android:padding="2dp"
                     android:text="8:00 PM EST " />
+
                 <TextView
                     android:id="@+id/asl_host"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="2dp"
                     android:gravity="center"
+                    android:padding="2dp"
                     android:text=" Host by: The American Sign Language Club" />
 
             </LinearLayout>
         </LinearLayout>
 
-        <!-- basement cafe event #2 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
